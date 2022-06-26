@@ -11,6 +11,7 @@ const port = process.env.PORT || 3000;
 app.set('view engine', 'ejs');
 
 app.use(express.json());
+app.use(express.urlencoded());
 
 
 app.use(session({
