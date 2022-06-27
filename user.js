@@ -4,7 +4,7 @@ function User ({
   id,
   name, 
   email, 
-  passwrd, 
+  passwrd
  
 }) {this.id = id;
     this.name = name;
