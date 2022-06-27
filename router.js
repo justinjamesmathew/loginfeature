@@ -1,4 +1,6 @@
 var express = require('express');
+const usersController = require('./controller/user');
+
 var router = express.Router();
 const credential = {
     email:'justin@gmail.com',
@@ -19,4 +21,8 @@ router.post('/login',(req,res)=>{
         res.end('Invalid username or password');
     }
 });
+
+
+
+router.post('/signup', usersController.postSignup);
 module.exports = router;
